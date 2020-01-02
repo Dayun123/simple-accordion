@@ -1,15 +1,22 @@
 body {
   max-width: 600px;
   margin: 0 auto;
-  border: 1px solid black;
 }
 
 .accordian-header {
-  border: 1px solid blue;
   display: flex;
 }
 
 h2 {
   /* Makes the heading (First Accordian, Second Accordian, ect) take up as much space as it can in the flex-container, which will push the <button> element all the way to the end (the right) of the flex-container. This makes the elements appear to be aligned at the far left (the header) and right (the button) of the .accordian-header. */
   flex-grow: 1;
+}
+
+/* The source-order matters here, so be aware! .accoridan-content needs to come before .display, since they are both on the same element and affect the same value. */
+.accordian-content {
+  display: none;
+}
+
+.display {
+  display: block;
 }
