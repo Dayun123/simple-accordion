@@ -5,6 +5,7 @@ body {
 
 .accordian-header {
   display: flex;
+  align-items: center;
 }
 
 h2 {
@@ -19,4 +20,8 @@ h2 {
 
 .display {
   display: block;
+}
+
+button {
+  height: 30px;
 }
